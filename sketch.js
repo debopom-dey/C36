@@ -2,9 +2,9 @@ var feedPet,addFood,fedTime,lastFed,foodObj,foodStock,milkBottle,milk;
 
 function preload()
 {
-  dogImg=loadImage("dogImg.png")
-  happyDog=loadImage("dogImg1.png")
-  milkBottle=loadImage("Milk.png")
+  dogImg=loadImage("images/dogImg.png")
+  happyDog=loadImage("images/dogImg1.png")
+ // milkBottle=loadImage("images/Milk.png")
 	//load images here
 }
 
@@ -14,10 +14,7 @@ function setup() {
 	createCanvas(1000, 400);
  
   foodObj=new Food();
-  milk=createSprite(720,200,20,20)
-  milk.addImage("milkBottle",milkBottle)
-  milk.scale=0.15
-  milk.visible=false
+
   dog=createSprite(800,200,100,100)
   dog.addImage(dogImg)
   dog.scale=0.2
@@ -59,10 +56,7 @@ function draw() {
     text("Last Feed:"+lastFed+"AM",350,30)
 
   }
-  if(mousePressedOver(feedPet)){
  
-    milk.visible=true
-     }
   drawSprites();
 }
 
