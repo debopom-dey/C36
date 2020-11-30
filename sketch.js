@@ -2,9 +2,9 @@ var feedPet,addFood,fedTime,lastFed,foodObj,foodStock,milkBottle,milk;
 
 function preload()
 {
-  dogImg=loadImage("images/dogImg.png")
-  happyDog=loadImage("images/dogImg1.png")
-  milkBottle=loadImage("images/Milk.png")
+  dogImg=loadImage("dogImg.png")
+  happyDog=loadImage("dogImg1.png")
+  milkBottle=loadImage("Milk.png")
 	//load images here
 }
 
